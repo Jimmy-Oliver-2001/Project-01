@@ -283,4 +283,5 @@ marquee{
     background-color: yellow;
     color: red;
     margin-bottom: -4px;
+    position: fixed;
 }
