@@ -1,0 +1,30 @@
+@media (min-width:320px) and (max-width:990px) {
+    nav{
+        display: none;
+    }
+    header h1{
+        font-size: 18px;
+    }
+    
+    header{
+        padding: 20px 80px 20px 30px;
+    }
+    .menu{
+        display: block;
+    }
+
+
+
+    .hero h1{
+        font-size: 40px;
+    }
+    
+    .paragraph .para-1 ,.para-2{
+        text-align: center;
+    }
+   
+    form div input,textarea{
+        width: 90vmin;
+    }
+    
+}

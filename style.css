@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  scroll-behavior: smooth;
+}
+
+:root {
+  --PrimaryColor: #2c3e50;
+  --SecondaryColor: #1abc9c;
+}
+/* HEADER CSS START */
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 20px 80px 20px 80px;
+  position: sticky;
+  top: 0;
+  color: white;
+  background-color: var(--PrimaryColor);
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.menu {
+  display: none;
+}
+.menu button {
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--SecondaryColor);
+  padding: 10px 14px 10px 14px;
+  color: white;
+}
+/* HEADER CSS END */
+
+/* HERO SECTION CSS START */
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--SecondaryColor);
+  padding: 60px 10px 60px 10px;
+  flex-wrap: wrap;
+  gap: 40px;
+  color: white;
+}
+.hero h1 {
+  font-size: 60px;
+}
+.hero p {
+  font-size: 20px;
+}
+.hero img {
+  width: 200px;
+}
+.img img:nth-child(2) {
+  height: 50px;
+  width: 50px;
+}
+.img img:nth-child(1) {
+  height: 50px;
+  width: 100px;
+}
+.img img:nth-child(3) {
+  height: 50px;
+  width: 100px;
+}
+
+.img {
+  width: 300px;
+}
+
+/* HERO SECTION CSS END */
+
+/* CARD SECTION CSS START */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+.portfolio h1,
+.contact h1 {
+  font-size: 45px;
+  color: var(--PrimaryColor);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.row .card img {
+  height: 200px;
+  width: 300px;
+  border-radius: 12px;
+}
+/* CARD SECTION CSS END */
+
+/* ABOUT SECTION CSS END */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--SecondaryColor);
+  color: white;
+  padding: 60px 0px;
+  gap: 40px;
+  margin-top: 80px;
+}
+.about h1 {
+  font-size: 50px;
+}
+.paragraph {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.para-1 {
+  width: 320px;
+}
+
+.para-2 {
+  width: 290px;
+}
+.paragraph .para-1,
+.para-2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about button {
+  outline: none;
+  border: 2px solid white;
+  padding: 18px 30px;
+  font-size: larger;
+  border-radius: 10px;
+  background-color: var(--SecondaryColor);
+  color: white;
+}
+
+.about button:hover {
+  background-color: white;
+  color: black;
+}
+/* ABOUT SECTION CSS END */
+
+/* CONTACT SECTION CSS START */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+form div,
+textarea {
+  margin-top: 18px;
+}
+
+form div input,
+textarea {
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: none;
+  font-size: 24px;
+  height: 80px;
+  width: 70vmin;
+}
+
+form {
+  text-align: left;
+}
+
+form button {
+  margin-top: 18px;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--SecondaryColor);
+}
+/* CONTACT SECTION CSS END */
+
+/* FOOTER CSS START */
+footer {
+  margin-top: 80px;
+  color: white;
+  text-align: center;
+}
+.box-1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--PrimaryColor);
+  text-align: center;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 20px;
+}
+
+.minibox-1 .paragraph-1,
+.minibox-2 p,
+.minibox-3 .para-01 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.minibox-3 .para-02 {
+  width: 300px;
+}
+
+.minibox-1 .para-2 {
+  width: 250px;
+}
+
+.minibox-1,
+.minibox-3,
+.minibox-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.minibox-2 .icon {
+  display: flex;
+  gap: 13px;
+}
+
+.minibox-2 i {
+  font-size: 34px;
+}
+
+.box-2 {
+  padding: 20px;
+  background-color: #1a252f;
+}
+/* FOOTER CSS END */
+
+marquee{
+    font-size: 24px;
+    background-color: yellow;
+    color: red;
+    margin-bottom: -4px;
+}
